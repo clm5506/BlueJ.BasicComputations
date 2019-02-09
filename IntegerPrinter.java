@@ -1,18 +1,29 @@
- 
+ import java.util.Scanner; 
 
 
 public class IntegerPrinter {
 
     public String printIntegerAsBinary(int value){
-        return null;
+        String result = "";
+        
+        result += Integer.toBinaryString(value);
+        return result;
     }
 
     public String printIntegerAsOctal(int value){
-        return null;
+        
+        String result = "";
+        
+        result += Integer.toOctalString(value);
+        return result;
     }
 
     public String printIntegerAsHexadecimal(int value){
-        return null;
+        String result = "";
+        
+        result += Integer.toHexString(value);
+        
+        return result;
     }
 
     public static void main(String[] args){
